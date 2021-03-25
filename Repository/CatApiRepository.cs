@@ -32,6 +32,7 @@ namespace Repository
             request.AddParameter("category_ids", categoryId);
             request.AddParameter("page", page);
             request.AddParameter("limit", limit);
+            request.AddParameter("order", "Desc");
             var queryResult = await _client.ExecuteAsync<List<Image>>(request);
 
             return queryResult;
