@@ -16,7 +16,7 @@ export default class Table extends Component {
                     <tr className="filters">
                         <th>
                             <select className="form-control" onChange={e => { this.props.onFilter(e.target.value); }}>
-                                <option value="">Select Category</option>
+                                <option value="0">Select Category</option>
                                 {categories.map(category =>
                                     <option value={category.id} key={category.id}>{category.name}</option>
                                 )}
