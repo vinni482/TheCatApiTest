@@ -21,7 +21,7 @@ namespace TheCatApiTest.Mappings
                 .ForMember(dest => dest.TotalCount, opt => opt.MapFrom(src => WebMappingProfile.GetTotalCountFromHeaders(src)));
         }
 
-        static object GetTotalCountFromHeaders(IRestResponse<List<Image>> response) 
+        public static object GetTotalCountFromHeaders(IRestResponse<List<Image>> response) 
         {
             var count = response.Headers.Where(h => h.Name.ToLower() == Headers.PaginationCount).Select(h => h.Value).FirstOrDefault();
             return count;
