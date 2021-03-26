@@ -54,7 +54,8 @@ export class Home extends Component {
     }
 
     async populateImages() {
-        const response = await fetch('images?categoryId=' + this.state.categoryId + '&page=' + this.state.page + '&limit=' + this.state.limit, { method: 'GET' });
+        const page = this.state.page - 1;
+        const response = await fetch('images?categoryId=' + this.state.categoryId + '&page=' + page + '&limit=' + this.state.limit, { method: 'GET' });
         const data = await response.json();
         this.setState({ images: data.items, imagesCount: data.totalCount });
     }

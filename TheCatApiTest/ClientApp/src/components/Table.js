@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 
 export default class Table extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         const { data } = this.props;
         const { categories } = this.props;
@@ -28,7 +24,7 @@ export default class Table extends Component {
                     {data.map(image =>
                         <tr key={image.id}>
                             <td>
-                                <a href={image.url} target="_blank"><img src={image.url} height="200" /></a>
+                                <a href={image.url} target="_blank" rel="noopener noreferrer"><img src={image.url} height="200" alt="There must be a cat" /></a>
                             </td>
                         </tr>
                     )}
