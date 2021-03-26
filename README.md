@@ -28,4 +28,58 @@ https://api.thecatapi.com/v1/images/search?category_ids=4&page=1&limit=31&order=
 ## 7.	What is your favourite new feature in .Net?
  * C# 9.0 updates (Init only setters public DateTime RecordedAt { get; init; } - might be usefull, for example to protect DTOs from changing)
 ## 8.	Describe yourself in JSON.
- *  
+ > {
+  "Name": "Anton Pukhno",
+  "Age": 28,
+  "Skills": [ "C#", "SQL", "ASP.NET Core", "ASP.NET MVC", "ASP.NET WebAPI", "Razor", "HTML", "CSS", "Javascript", "jQuery", "bootstrap", "AngularJs", "..." ],
+  "Education": [
+    {
+      "Name": "IT Step Academy",
+      "Course": "Programming",
+      "StartDate": "2014-11-01T00:00:00",
+      "EndDate": "2017-06-01T00:00:00"
+    },
+    {
+      "Name": "Zaporizhia State Engineering Academy",
+      "Course": "Physics and Biomedical Electronics",
+      "StartDate": "2014-09-01T00:00:00",
+      "EndDate": "2016-02-01T00:00:00"
+    },
+    {
+      "Name": "Zaporizhia State Engineering Academy",
+      "Course": "Micro- and Nano-electronics",
+      "StartDate": "2010-09-01T00:00:00",
+      "EndDate": "2014-06-01T00:00:00"
+    }
+  ],
+  "WorkHistory": [
+    {
+      "CompanyName": "CarShipIO",
+      "Position": "Fullstack Developer",
+      "StartDate": "2019-09-01T00:00:00",
+      "EndDate": "2021-02-14T00:00:00",
+      "Responsibilities": [ "Maintain an existing live ASP.NET MVC (.NET Framework 4.6.1) + angularJs project, fix bugs, add new functions" ]
+    },
+    {
+      "CompanyName": "Jellyfish.tech",
+      "Position": "ASP.NET Developer",
+      "StartDate": "2018-11-01T00:00:00",
+      "EndDate": "2019-09-01T00:00:00",
+      "Responsibilities": [ "Rebuild existing ASP.NET Web Pages project to ASP.NET Core 2.2.", "Add new features (ADFS/AzureAD SSO using OpenID Connect, sending files into Amazon S3 bucket, etc.)", "Fix bugs and create new API for Angular client app" ]
+    },
+    {
+      "CompanyName": "Ulito LTD",
+      "Position": "Fullstack Developer",
+      "StartDate": "2016-11-01T00:00:00",
+      "EndDate": "2018-10-01T00:00:00",
+      "Responsibilities": [ "Work in a team on new and existing projects, add new features, fix bugs, take part in database design, code review.", "Follow the company coding standards: meet the separation of concerns principle, do not make unnecessary requests, do not request unnecessary data, provide access to data only for allowed users, etc." ]
+    },
+    {
+      "CompanyName": "QATestLab",
+      "Position": "QA Automation Engineer",
+      "StartDate": "2016-06-01T00:00:00",
+      "EndDate": "2016-11-01T00:00:00",
+      "Responsibilities": [ "Automation testing of Web applications with Selenium framework (C#/Java).", "Automation testing of Web services (API automation using C# + RestSharp).", "Performance testing of Web applications with JMeter, HP LoadRunner." ]
+    }
+  ]
+}  
